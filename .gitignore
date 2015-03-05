@@ -1,1 +1,9 @@
+.myeclipse
+.settings
+WebRoot/WEB-INF/classes
+WebRoot/app/bower_componets
+WebRoot/app/node_modules
+WebRoot/app/scss
+
 .sass-cache
+*.psd
