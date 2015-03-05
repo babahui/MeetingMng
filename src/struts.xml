@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.serve.static.browserCache" value="false" />
+	
+	<!-- 门户网站,游客访问权限 --> 
+    <package name="portal-site" namespace="/" extends="struts-default">	
+    	<action name="*" class="com.opensymphony.xwork2.ActionSupport">  
+		    <result>/{1}.html</result>  
+	    </action>
+    </package>
+    <!-- 后台管理，普通用户/公司管理员访问权限 -->
+    <package name="manage-package" namespace="/manage" extends="struts-default">	
+    	<action name="*">  
+		    <result>/app/templates/manage/{1}.jsp</result>  
+	    </action>
+    </package>
+    <!-- 后台管理，系统管理员访问权限 -->
+    <package name="system-package" namespace="/system" extends="struts-default">	
+    	<action name="*">  
+		    <result>/app/templates/system/{1}.jsp</result>  
+	    </action>
+    </package>
+</struts>    

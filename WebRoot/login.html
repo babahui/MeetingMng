@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+
+    <title>Meeting Manager</title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="app/bower_components/pure/forms-min.css">
+
+
+    <!--[if lte IE 8]>
+      
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+      
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+      
+    <!--<![endif]-->
+
+
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+
+
+  
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="app/css/portal-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="app/css/portal.css">
+    <!--<![endif]-->
+</head>
+<body>
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Meeting Manager</a>
+
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="#download" class="pure-menu-link">Download</a></li>
+            <li class="pure-menu-item"><a href="help.html" class="pure-menu-link">Help</a></li>
+            <li class="pure-menu-item"><a href="login.html" class="pure-menu-link">Sign Up</a></li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="content tab-select-container">
+        <h2 class="content-head is-center">登录</h2>
+
+        <div class="pure-g">
+            <div class="l-box pure-u-1 pure-u-lg-1-4">
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-2-4">
+                <form class="pure-form pure-form-aligned">
+							    <fieldset>
+							        <div class="pure-control-group">
+							            <label for="phone">账号</label>
+							            <input id="phone" type="text" placeholder="注册账号">
+							        </div>
+
+							        <div class="pure-control-group">
+							            <label for="password">密码</label>
+							            <input id="password" type="password" placeholder="Password">
+							        </div>
+
+							        <div class="pure-control-group pure-radio">
+							        	<label>账号类型</label>
+								        <input type="radio" name="usertype" value="0" checked>普通用户
+								        <input type="radio" name="usertype" value="10">公司管理员
+								        
+
+							        </div>
+
+							        <div class="pure-controls">
+							            <label for="cb" class="pure-checkbox">
+							                <input id="cb" type="checkbox"> 记住密码
+							            </label>
+
+							            <button type="submit" class="pure-button pure-button-primary">登录</button>
+							            <a href="">忘记密码？</a>
+							        </div>
+							    </fieldset>
+								</form>
+            </div>
+            <div class="l-box pure-u-1 pure-u-lg-1-4">
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="footer l-box is-center">
+        2015.HUST
+    </div>
+
+</div>
+<script src="app/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="app/js/portal.js"></script>
+</body>
+</html>

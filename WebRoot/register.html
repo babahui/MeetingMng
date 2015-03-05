@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+
+    <title>Meeting Manager</title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="app/bower_components/pure/forms-min.css">
+
+
+    <!--[if lte IE 8]>
+      
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+      
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+      
+    <!--<![endif]-->
+
+
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+
+
+  
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="app/css/portal-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="app/css/portal.css">
+    <!--<![endif]-->
+</head>
+<body>
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Meeting Manager</a>
+
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="#download" class="pure-menu-link">Download</a></li>
+            <li class="pure-menu-item"><a href="help.html" class="pure-menu-link">Help</a></li>
+            <li class="pure-menu-item"><a href="login.html" class="pure-menu-link">Sign Up</a></li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="content tab-select-container">
+        <h2 class="content-head is-center">Excepteur sint occaecat cupidatat.</h2>
+
+        <div class="pure-g">
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            </div>
+            <div id="tab-normal" class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-mobile"></i>
+                    	普通用户注册
+                </h3>
+                <p>
+                    您可以创建会议，对自己参与的会议进行管理
+                </p>
+            </div>
+            <div id="tab-company" class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-th-large"></i>
+                    公司管理员注册
+                </h3>
+                <p>
+                   针对于公司管理者，您可以对整个公司的会议情况进行管理
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            </div>
+        </div>
+    </div>
+	
+    <div id="content-normal" class="content box-hidden">
+        <h2 class="content-head is-center">普通用户注册</h2>
+        <form class="pure-form pure-form-aligned">
+		    <fieldset>
+		        <div class="pure-control-group">
+		            <label for="phone">手机号</label>
+		            <input id="phone" type="text" placeholder="该手机号将作为登录账号">
+		        </div>
+
+		        <div class="pure-control-group">
+		            <label for="captcha">验证码</label>
+		            <input id="captcha" type="password" placeholder="Password">
+                    <button class="pure-button pure-button-primary">确认</button>
+		        </div>
+
+		        <div class="pure-control-group">
+		            <label for="password">设定密码</label>
+		            <input id="password" type="password" placeholder="Password">
+		        </div>
+
+		        <div class="pure-control-group">
+		            <label for="repassword">重复密码</label>
+		            <input id="repassword" type="password" placeholder="Password">
+		        </div>
+
+		        <div class="pure-controls">
+		            <label for="cb" class="pure-checkbox">
+		                <input id="cb" type="checkbox"> 我同意<a href="#">《会管家用户使用协议》</a>
+		            </label>
+
+		            <button type="submit" class="pure-button pure-button-primary">注 册</button>
+		        </div>
+		    </fieldset>
+		</form>
+    </div>
+    
+    <div id="content-company" class="content box-hidden">
+        <h2 class="content-head is-center">公司管理员注册</h2>
+		<form class="pure-form pure-form-aligned">
+            <fieldset>
+                <div class="pure-control-group">
+                    <label for="email">邮箱</label>
+                    <input id="email" type="text" placeholder="该邮箱将作为登录账号">
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="password">设定密码</label>
+                    <input id="password" type="password" placeholder="Password">
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="repassword">重复密码</label>
+                    <input id="repassword" type="password" placeholder="Password">
+                </div>
+
+                <div class="pure-control-group">
+                    <label>公司地址</label>
+                    <select id="sprovince">
+                        <option>AL</option>
+                        <option>CA</option>
+                        <option>IL</option>
+                    </select>
+                    <select id="city">
+                        <option>AL</option>
+                        <option>CA</option>
+                        <option>IL</option>
+                    </select>
+                </div>
+
+                <div class="pure-control-group">
+                    <label>行业类型</label>
+                    <select id="industry">
+                        <option>AL</option>
+                        <option>CA</option>
+                        <option>IL</option>
+                    </select>
+                </div>
+
+                <div class="pure-controls">
+                    <label for="cb" class="pure-checkbox">
+                        <input id="cb" type="checkbox"> 我同意<a href="#">《会管家用户使用协议》</a>
+                    </label>
+
+                    <button type="submit" class="pure-button pure-button-primary">注 册</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="footer l-box is-center">
+        2015.HUST
+    </div>
+
+</div>
+<script src="app/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="app/js/portal.js"></script>
+</body>
+</html>
